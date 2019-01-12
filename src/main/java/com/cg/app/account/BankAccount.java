@@ -9,6 +9,10 @@ public class BankAccount {
 	static {
 		accountId = 100;
 	}
+	
+	public BankAccount() {
+		accountNumber = ++accountId;
+	}
 
 	public BankAccount(String accountHolderName, double accountBalance) {
 		accountNumber = ++accountId;
